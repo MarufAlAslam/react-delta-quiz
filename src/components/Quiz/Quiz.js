@@ -13,8 +13,8 @@ const Quiz = ({ quiz }) => {
                 <div className='card-footer text-white pb-3'>
                     <h3>{quiz.name}</h3>
                     <p>No. of Questions: {quiz.total}</p>
-                    <button className='btn btn-light w-100'>
-                        <Link to={`quiz/${quiz.id}`}>Start Quiz</Link>
+                    <button className='btn btn-light w-100 p-0'>
+                        <Link className='text-dark text-decoration-none d-block h-100 w-100 p-2' to={`quiz/${quiz.id}`}>Start Quiz</Link>
                     </button>
                 </div>
             </div>
