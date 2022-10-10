@@ -1,0 +1,8 @@
+.quiz-box p,
+.quiz-box span {
+    color: white !important;
+}
+
+.fs-20 {
+    font-size: 20px;
+}

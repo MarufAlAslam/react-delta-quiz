@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='container'>
                 <div className='text-center'>
                     <p className='mb-0'>
-                        &copy; 2022 Quiz App. All Rights Reserved.
+                        &copy; 2022 Delta Quiz. All Rights Reserved.
                     </p>
                 </div>
             </div>

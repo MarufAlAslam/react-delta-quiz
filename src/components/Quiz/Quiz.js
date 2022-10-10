@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Quiz.css';
 
 const Quiz = ({ quiz }) => {
@@ -13,7 +14,7 @@ const Quiz = ({ quiz }) => {
                     <h3>{quiz.name}</h3>
                     <p>No. of Questions: {quiz.total}</p>
                     <button className='btn btn-light w-100'>
-                        Start Quiz
+                        <Link to={`quiz/${quiz.id}`}>Start Quiz</Link>
                     </button>
                 </div>
             </div>
