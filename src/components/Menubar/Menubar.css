@@ -1,0 +1,20 @@
+.purple {
+    color: purple;
+}
+
+a.nav-link {
+    color: black;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+a.navbar-brand {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+a.active-link.nav-link,
+a.nav-link:hover {
+    background: purple;
+    color: white;
+}
