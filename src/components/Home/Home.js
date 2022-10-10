@@ -13,7 +13,7 @@ const Home = () => {
                 <div className='text-center mb-3'>
                     <h2>Available Quiz Topics</h2>
                 </div>
-                <div className='quiz-container'>
+                <div className='row py-4'>
                     {
                         loaderData.data.map(quiz => <Quiz key={quiz.id} quiz={quiz}></Quiz>)
                     }
