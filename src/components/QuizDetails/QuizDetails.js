@@ -28,7 +28,7 @@ const QuizDetails = () => {
                     <h1 className='purple fw-bold'>{loaderData.data.name}</h1>
                 </div>
 
-                <div className='quiz-cards row'>
+                <div className='quiz-cards row column-reverse'>
                     <div className='col-md-9 p-3'>
                         {
                             loaderData.data.questions.map(question => <Question key={question.id} quizProps={quizProps} question={question}></Question>)

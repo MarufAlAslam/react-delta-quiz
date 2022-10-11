@@ -6,3 +6,18 @@
 .btn-options {
     min-width: 120px;
 }
+
+@media screen and (max-width: 767px) {
+    .quiz-box {
+        padding: 25px !important;
+    }
+
+    button.btn.btn-success {
+        margin-left: 20px;
+    }
+
+    .result-holder {
+        position: unset;
+        top: 0;
+    }
+}

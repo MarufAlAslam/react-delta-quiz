@@ -7,7 +7,7 @@ const Banner = () => {
         <div className='banner py-5'>
             <div className='container'>
                 <div className='row column-reverse'>
-                    <div className='col-md-6 p-3 m-auto'>
+                    <div className='col-lg-6 p-3 m-auto'>
                         <h4>
                             <span className='purple'>judge you with</span>
                         </h4>
@@ -29,7 +29,7 @@ const Banner = () => {
 
                         </ul>
                     </div>
-                    <div className='col-md-6 p-3'>
+                    <div className='col-lg-6 p-3'>
                         <img src={banner} className="img-fluid" alt="" />
                     </div>
                 </div>

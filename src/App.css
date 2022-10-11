@@ -3,3 +3,15 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
+
+
+@media screen and (max-width:992px) {
+    a.nav-link {
+        margin-left: 0 !important;
+        padding: 10px;
+    }
+
+    .row.column-reverse {
+        flex-direction: column-reverse;
+    }
+}

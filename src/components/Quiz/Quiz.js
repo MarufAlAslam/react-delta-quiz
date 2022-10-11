@@ -4,7 +4,7 @@ import './Quiz.css';
 
 const Quiz = ({ quiz }) => {
     return (
-        <div className='col-md-3 col-6'>
+        <div className='col-lg-3 col-md-6 p-3'>
             <div className='card border-0 shadow gradient'>
                 <div className='card-body'>
                     <img src={quiz.logo} className="img-fluid card-img-top" alt="" />

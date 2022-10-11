@@ -18,3 +18,8 @@ a.nav-link:hover {
     background: purple;
     color: white;
 }
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
