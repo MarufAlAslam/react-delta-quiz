@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend, BarChart, Bar, Line, ComposedChart, Area } from 'recharts';
+import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend, Bar, Line, ComposedChart } from 'recharts';
 import './Statistics.css';
 
 const Statistics = () => {
     const loaderData = useLoaderData()
     let data = [];
+    // eslint-disable-next-line array-callback-return
     loaderData.data.map(apiData => { data.push({ name: apiData.name, total: apiData.total }) })
 
     return (

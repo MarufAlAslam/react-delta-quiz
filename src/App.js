@@ -6,6 +6,7 @@ import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetails/QuizDetails';
+import ErrorRoute from './components/ErrorRoute/ErrorRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -29,7 +30,7 @@ function App() {
         },
         {
           path: "*",
-          element: <h1>404 Not Found</h1>,
+          element: <ErrorRoute></ErrorRoute>,
         },
         {
           path: "quiz/:quizId",
