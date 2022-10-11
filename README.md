@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Hello There! Welcome to Delta Quiz
+### You'll find the live website here: https://delta-quiz.netlify.app/
+<br> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## What is Delta Quiz?
+Delta Quiz is a quiz app that allows you to create and take quizzes.
+<br>
+It is built with: 
+<ul>
+<li>
+React js for the frontend
+</li>
+<li>
+React Bootstrap for responsive layouts and simple designs
+</li>
+<li>
+Vanilla CSS for custom stylings
+</li>
+<li>
+React Router for routing
+</li>
+<li>
+React Fontawesome for icons
+</li>
+<li>
+Recharts for Amazing Charts
+</li>
+</ul> 
 
-In the project directory, you can run:
+## Work Flow:
 
-### `npm start`
+In this below list, I'm writting the actual work flow I've followed to complete the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<ol>
+<li>
+Create React App Named "Delta-Quiz" using <span style="color: yellow; font-size: 16px">npx create-react-app delta-quiz</span> command.
+</li>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<li>
+Create Local Repository using <span style="color: yellow; font-size: 16px">git init</span> command.
+</li>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li>
+Changed the favicon and title of the website
+</li>
 
-### `npm run build`
+<li>
+pushed the local repository to github using <span style="color: yellow; font-size: 16px">git remote add origin</span> command
+</li>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<li>
+Installed React Router using <span style="color: yellow; font-size: 16px">npm install react-router-dom</span> command.
+</li>
+<li>
+Installed React Bootstrap using <span style="color: yellow; font-size: 16px">npm install react-bootstrap bootstrap</span> command.
+</li>
+<li>
+Installed React Fontawesome using <span style="color: yellow; font-size: 16px">npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome</span> command.
+</li>
+<li>
+Installed Recharts using <span style="color: yellow; font-size: 16px">npm install recharts</span> command.
+</li>
+<li>
+Installed React Toastify using <span style="color: yellow; font-size: 16px">npm install react-toastify</span> command.
+</li>
+<li>
+Created Components Folder and add all the components one by one when necessary.
+</li>
+<li>
+Created Navar to Navigate between pages.
+</li>
+<li>
+Fetched Data from API and displayed it in the UI.
+</li>
+<li>
+Added Quiz Page and Quiz Component.
+</li>
+<li>
+Added Quiz Result Component, and display the result.
+</li>
+<li>
+Added a Composite Chart(Bar and Line) in statistics page. it contains the total number of quizes availabe per category.
+</li>
+<li>
+Added a Blog Page contains 3 provided questions and answers.
+</li>
+<li>
+Added a 404 not found page
+</li>
+<li>
+Made the website Responsive
+</li>
+<li>
+Check and Push Everything to Github.
+</li>
+<li>
+Build the project using <span style="color: yellow; font-size: 16px">npm run build</span> command.
+</li>
+<li>
+Deployed the project using Netlify.
+</li>
+</ol>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Which things I liked the most in this project?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<ul>
+<li>Installing React</li>
+<li>Installing React Router</li>
+<li>Creating Routes with React Router</li>
+<li>Creating Components</li>
+<li>Fetching Data from API</li>
+<li>Passing Data using Props</li>
+<li>Using React Bootstrap</li>
+<li>Using Recharts</li>
+<li>Using React Toastify</li>
+<li>Using React Fontawesome</li>
+</ul>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
