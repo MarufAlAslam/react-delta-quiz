@@ -6,3 +6,23 @@
 .fs-20 {
     font-size: 20px;
 }
+
+.Toastify {
+    border: 1px solid green;
+}
+
+.Toastify * {
+    box-shadow: unset;
+}
+
+.Toastify__toast {
+    background: #daeeda;
+}
+
+.Toastify .text-dark {
+    color: black !important;
+}
+
+.Toastify__toast-body {
+    align-items: flex-start;
+}
