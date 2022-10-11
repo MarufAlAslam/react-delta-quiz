@@ -17,6 +17,7 @@ const Menubar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <NavLink eventKey="1" className={({ isActive }) => (isActive ? "active-link nav-link" : "inactive nav-link")} to="/" end>Home</NavLink>
+                        <NavLink eventKey="1" className={({ isActive }) => (isActive ? "active-link nav-link" : "inactive nav-link")} to="/topics" end>Topics</NavLink>
                         <NavLink eventKey="2" className={({ isActive }) => isActive ? "active-link nav-link" : "inactive nav-link"} to="statistics">Statistics</NavLink>
                         <NavLink eventKey="3" className={({ isActive }) => isActive ? "active-link nav-link" : "inactive nav-link"} to="blogs">Blogs</NavLink>
                     </Nav>
