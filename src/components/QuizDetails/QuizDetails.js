@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
 const QuizDetails = () => {
     const loaderData = useLoaderData();
-    console.log(loaderData.data.questions.length);
+    // console.log(loaderData.data.questions.length);
+    const [correct, setCorrect] = useState(0);
+    const [incorrect, setInCorrect] = useState(0);
     return (
         <div className='quiz-holder py-5'>
             <div className='container'>
@@ -16,7 +18,7 @@ const QuizDetails = () => {
                 <div className='quiz-cards row'>
                     <div className='col-md-9 p-3'>
                         {
-                            loaderData.data.questions.map(question => <Question key={question.id} question={question}></Question>)
+                            loaderData.data.questions.map(question => <Question key={question.id} question={question} correct={setCorrect} incorrect={setInCorrect}></Question>)
                         }
                     </div>
                     <div className='col-md-3 p-3'>
