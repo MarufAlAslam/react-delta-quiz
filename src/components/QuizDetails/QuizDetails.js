@@ -42,7 +42,7 @@ const QuizDetails = () => {
                                 </h4>
                                 <hr className='text-white' />
                                 <p className='text-white mb-2 fs-20'>
-                                    Totat Questions: <span className='badge bg-light text-dark'>{loaderData.data.questions.length}</span>
+                                    Total Questions: <span className='badge bg-light text-dark'>{loaderData.data.questions.length}</span>
                                 </p>
                                 <p className='text-white mb-2'>
                                     Correctly Answered: <span className='badge bg-success'>{correct}</span> Times

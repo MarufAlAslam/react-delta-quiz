@@ -6,14 +6,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Question.css';
 
 const Question = ({ question, quizProps }) => {
-    let { correct, setCorrect, incorrect, setInCorrect, diff, setDiff } = quizProps;
+    let { correct, setCorrect, incorrect, setInCorrect, setDiff } = quizProps;
+
+
     function createMarkup() {
         return { __html: `${question.question}` };
     }
-    const notify = () => toast.success(<div>
-        <p className='text-dark mb-1'>Correct Answer is: </p>
-        {question.correctAnswer}
-    </div>, {
+    const toastData = {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -22,34 +21,21 @@ const Question = ({ question, quizProps }) => {
         draggable: true,
         progress: undefined,
         theme: "light",
-    });;
-
+    }
+    const notify = () => toast.success(
+        <div>
+            <p className='text-dark mb-1'>Correct Answer is: </p>
+            {question.correctAnswer}
+        </div>, toastData
+    );;
 
     const right = () => toast.success(<div>
         <p className='text-dark mb-1'>Correct!!! 😎 😎 😎</p>
-    </div>, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-    });;
+    </div>, toastData);;
 
     const wrong = () => toast.error(<div>
         <p className='text-dark mb-1'>Wrong!!! 😒 😒 😒</p>
-    </div>, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-    });;
+    </div>, toastData);;
 
 
 
