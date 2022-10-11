@@ -4,6 +4,14 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    background: #f5f1f5 !important;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
 
 @media screen and (max-width:992px) {
     a.nav-link {

@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Question.css';
 
-const Question = ({ question, quizProps }) => {
+const Question = ({ question, quizProps, index }) => {
     let { correct, setCorrect, incorrect, setInCorrect, setDiff } = quizProps;
 
 
@@ -64,8 +64,11 @@ const Question = ({ question, quizProps }) => {
     return (
         <div className='quiz-box gradient rounded text-white p-5 my-5'>
             <div className='d-flex justify-content-between align-items-start'>
-                <p className='fs-20' dangerouslySetInnerHTML={createMarkup()}></p>
-                <button className='btn btn-success' onClick={notify}>
+                <div className='d-flex align-items-start'>
+                    <span className='fs-20 badge bg-danger text-dark'>{index}</span>
+                    <p className='fs-20 ms-2' dangerouslySetInnerHTML={createMarkup()}></p>
+                </div>
+                <button className='btn btn-primary' onClick={notify}>
                     <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </button>
             </div>

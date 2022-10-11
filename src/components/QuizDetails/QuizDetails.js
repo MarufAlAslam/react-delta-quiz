@@ -31,7 +31,7 @@ const QuizDetails = () => {
                 <div className='quiz-cards row column-reverse'>
                     <div className='col-md-9 p-3'>
                         {
-                            loaderData.data.questions.map(question => <Question key={question.id} quizProps={quizProps} question={question}></Question>)
+                            loaderData.data.questions.map((question, index) => <Question key={question.id} index={index + 1} quizProps={quizProps} question={question}></Question>)
                         }
                     </div>
                     <div className='col-md-3 p-3'>
