@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ErrorRoute from '../ErrorRoute/ErrorRoute';
 import Question from '../Question/Question';
 import './QuizDetails.css'
 
 const QuizDetails = () => {
     const loaderData = useLoaderData();
+    console.log(loaderData);
     // console.log(loaderData.data.questions.length);
     const [correct, setCorrect] = useState(0);
     const [incorrect, setInCorrect] = useState(0);
@@ -21,7 +23,7 @@ const QuizDetails = () => {
         setDiff: setDiff
     }
     return (
-        <div className='quiz-holder py-5'>
+        loaderData.status ? <div className='quiz-holder py-5'>
             <div className='container'>
                 <div className='text-center'>
                     <p className='mb-0'>Quiz About</p>
@@ -59,7 +61,7 @@ const QuizDetails = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> : <ErrorRoute></ErrorRoute>
     );
 };
 
